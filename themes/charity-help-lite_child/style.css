@@ -1,0 +1,16 @@
+/*
+ Theme Name:   WPB Child Theme
+ Theme URI:    https://gracethemes.com/themes/charity-help-lite/
+ Description:  Charity Help Lite child theme 
+ Author:       WPBeginner
+ Author URI:   https://www.wpbeginner.com
+ Template:    Charity Help Lite
+ Version:      1.0.0
+*/
+ 
+@import url("../charity-help-lite/style.css");
+
+body{
+    background-color:rgb(231, 230, 230);
+}
+
