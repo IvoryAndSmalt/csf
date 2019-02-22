@@ -8,47 +8,33 @@ Version: 1.2
 */
 
 
+@import url('https://fonts.googleapis.com/css?family=Knewave');
+@import url('https://fonts.googleapis.com/css?family=Knewave|Roboto');
+
+
+
+
 /*** Style Footer ***/
-.container-child {
+.container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color: #2D3047;
 }
 
-.contact-child{
+
+.contact{
     display: flex;
     flex-direction: column;
     line-height: 50px;
     color: rgb(242, 178, 61);
     text-decoration: none;
 }
-.menu-child{
+.menu{
     display: flex;
     flex-direction: column;
     line-height: 50px;
 }
-
-.container-child div{
-	min-width: 240px;
-}
-
-#svg-child{
+#svg {
     width: 600px;
 }
-
-#hover-missions{
-	position: relative;
-	min-width: 200px;
-}
-
-#hover-missions figure{
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-#hover-missions img{
-	width: 200px;
-	height: auto;
-}
-
