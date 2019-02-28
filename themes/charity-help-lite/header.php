@@ -68,7 +68,27 @@ $inner_cls = 'siteinner';
 	  	       <?php } ?>            
                 
                <?php if( $show_socialicons != ''){ ?> 
-         
+               <div class="social-icons">                   
+                   <?php $fb_link = get_theme_mod('fb_link');
+		 				if( !empty($fb_link) ){ ?>
+            			<a title="facebook" class="fa fa-facebook" target="_blank" href="<?php echo esc_url($fb_link); ?>"></a>
+           		   <?php } ?>
+                
+                   <?php $twitt_link = get_theme_mod('twitt_link');
+					if( !empty($twitt_link) ){ ?>
+					<a title="twitter" class="fa fa-twitter" target="_blank" href="<?php echo esc_url($twitt_link); ?>"></a>
+          		   <?php } ?>
+            
+    			  <?php $gplus_link = get_theme_mod('gplus_link');
+					if( !empty($gplus_link) ){ ?>
+					<a title="google-plus" class="fa fa-google-plus" target="_blank" href="<?php echo esc_url($gplus_link); ?>"></a>
+           		  <?php }?>
+            
+           		  <?php $linked_link = get_theme_mod('linked_link');
+					if( !empty($linked_link) ){ ?>
+					<a title="linkedin" class="fa fa-linkedin" target="_blank" href="<?php echo esc_url($linked_link); ?>"></a>
+          		  <?php } ?>                  
+              </div><!--end .social-icons--> 
             <?php } ?>   
           <?php endif; // end sidebar widget area ?>      
          </div><!-- .head-rightpart --> 

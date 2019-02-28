@@ -9,18 +9,18 @@
 ?>
 
 <div class="footer-copyright">
-        	<div class="container">
-            	<div class="contact">
+        	<div class="container-child">
+            	<div class="contact-child">
                     <h3>Contact</h3>
-                    <p>Téléphone : </p>
+                    <p>Téléphone :03 84 26 13 96  </p>
                     <p>assocravanche@yahoo.com</p>
                     <p>13 Val du Salbert - 90300 CRAVANCHE</p>
                     <a href="https://cravanche.promo-24.codeur.online/?page_id=84">Formulaire de contact</a>
                 </div>
                 <div class="carteSvg">
-                    <img id="svg" src="http://localhost/csf/wp-content/themes/charity_child/MAP/MAP.svg" alt="SVG de la carte du monde"/>
+                    <img id="svg-child" src="http://localhost/csf/wp-content/themes/charity_child/MAP/MAP.svg" alt="SVG de la carte du monde"/>
                 </div>
-                <div class="menu">
+                <div class="menu-child">
                     <h3>Menu</h3>
                     <a href="https://cravanche.promo-24.codeur.online/">Accueil</a>
                     <a href="https://cravanche.promo-24.codeur.online/?page_id=62">Qui sommes-nous ?</a>
