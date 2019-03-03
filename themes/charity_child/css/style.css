@@ -1,0 +1,40 @@
+/*
+Theme Name: csf
+Description: Theme enfant de charity-help-lite tes bidon
+Author: Anjum Lucas Ryan Laura Bilel
+Author URI: https://www.wpserveur.net
+Template: charity-help-lite 
+Version: 1.2
+*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Knewave');
+@import url('https://fonts.googleapis.com/css?family=Knewave|Roboto');
+
+
+
+
+/*** Style Footer ***/
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #2D3047;
+}
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+    color: rgb(242, 178, 61);
+    text-decoration: none;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+}
+#svg {
+    width: 600px;
+}
