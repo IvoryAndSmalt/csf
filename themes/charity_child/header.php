@@ -48,10 +48,8 @@ $inner_cls = 'siteinner';
 						<p><?php echo esc_html($description); ?></p>
 				<?php endif; ?>
           </div><!-- logo -->
-       
           <div class="head-rightpart">
-               <?php if ( ! dynamic_sidebar( 'header-widget' ) ) : ?>   
-                             
+               <?php if ( ! dynamic_sidebar( 'header-widget' ) ) : ?>                              
                <?php
 				   $hdr_add_text = get_theme_mod('hdr_add_text');
 				   if( !empty($hdr_add_text) ){ ?>
@@ -145,8 +143,6 @@ if($show_slider != '') {
         <?php $i++; endwhile; ?>
     </div>   
 
-
-
 <?php 
 $j=1;
 $slidequery->rewind_posts();
@@ -168,13 +164,15 @@ wp_reset_postdata(); ?>
 <div class="clear"></div>        
 <?php } ?>
 <?php } } ?>
-     <!--.slider anjum --> 
-<?php 
-    echo do_shortcode("	[slide-anything id='168']"); 
-?> 
- <!--.end slider anjum --> 
-
-
+       
+<?php if (is_front_page() && ! is_home()){ ?> 
+  <div class="headerslider">
+   
+  <?php echo do_shortcode("	[slide-anything id='276']");  ?>
+  </div>
+  <?php  } ?>
+  
+        
 <?php if ( is_front_page() && ! is_home() ) {
 if( $show_servicesbox != ''){ ?>  
     <section id="section-wrap-1">

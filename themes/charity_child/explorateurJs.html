@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="demo.css" /> -->
+    <title>Explorateur Javascript</title>
+    
+</head>
+<body> 
+
+
+    <h3>Missions</h3>
+
+    <div class="boutons">
+        <button >Niger</button>
+        <button >BurkinaFaso</button>
+        <button >Afghanistan</button>
+        <button >Haiti</button>
+    </div>
+
+    <section class="Niger">
+        <artcile class="Niger1"><img src="photo.jpg" alt="" width="300px"/></artcile>
+        <artcile class="Niger2"><img src="photo.jpg" alt="" width="300px"/></artcile>
+        <artcile class="Niger3"><img src="photo.jpg" alt="" width="300px"/></artcile>
+        <artcile class="Niger4"><img src="photo.jpg" alt="" width="300px"/></artcile>
+    </section>
+
+    <section class="BurkinaFaso" style="display:none">
+        <artcile class="BurkinaFaso1"><img src="photo.jpg" alt="" width="300px"/></artcile>
+        <artcile class="BurkinaFaso2"><img src="photo.jpg" alt="" width="300px"/></artcile>
+        <artcile class="BurkinaFaso3"><img src="photo.jpg" alt="" width="300px"/></artcile>
+        <artcile class="BurkinaFaso4"><img src="photo.jpg" alt="" width="300px"/></artcile>
+    </section>
+
+    <section class="Afghanistan" style="display:none">
+        <artcile class="Afghanistan1"><img src="photo.jpg" alt="" width="300px"/></artcile>
+        <artcile class="Afghanistan2"><img src="photo.jpg" alt="" width="300px"/></artcile>
+        <artcile class="Afghanistan3"><img src="photo.jpg" alt="" width="300px"/></artcile>
+        <artcile class="Afghanistan4"><img src="photo.jpg" alt="" width="300px"/></artcile>
+    </section>
+
+    <section class="Haiti" style="display:none">
+        <artcile class="Haiti1"><img src="photo.jpg" alt="" width="300px"/></artcile>
+        <artcile class="Haiti2"><img src="photo.jpg" alt="" width="300px"/></artcile>
+        <artcile class="Haiti3"><img src="photo.jpg" alt="" width="300px"/></artcile>
+        <artcile class="Haiti4"><img src="photo.jpg" alt="" width="300px"/></artcile>
+    </section>
+
+
+    <script>
+    
+    //Variables 
+    
+    allbouton = document.querySelectorAll("button");
+    allsection = document.querySelectorAll("section");
+
+    //Evènements
+    for (var bouton of allbouton) {
+        bouton.addEventListener("click",function(event) {explorateur(event);} );    
+    }
+
+    //Fonctions
+
+    function explorateur(event) {
+        var boutonCliquer = event.srcElement;
+        // console.log(boutonCliquer);
+        for (var section of allsection) {
+            if (boutonCliquer.innerHTML == section.className) {
+                section.style.display="block";
+                console.log(section);
+            }
+            else {
+                section.style.display="none";
+            }
+        }
+    }
+    
+    </script>
+</body>
+</html>

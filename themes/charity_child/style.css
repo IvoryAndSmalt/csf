@@ -6,10 +6,6 @@ Author URI: https://www.wpserveur.net
 Template: charity-help-lite 
 Version: 1.2
 */
-<<<<<<< HEAD
 
-*{
-/*background: red;*/
-}
-=======
->>>>>>> 53d49865069525e9861e1ac5cba5e5c0f38d2cf5
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
